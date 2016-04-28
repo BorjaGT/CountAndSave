@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageButton
+        android:id="@+id/btn_seleccion"
+        android:visibility="invisible"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:padding="0dp"/>
+
+    <TextView
+        android:id="@+id/txv_concepto"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Concepto"
+        android:layout_toRightOf="@+id/btn_seleccion"
+        android:layout_centerVertical="true"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txv_concepto"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/txv_valor"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            />
+
+        <TextView
+            android:id="@+id/txv_porcentaje"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="porcentaje"
+            android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+            android:layout_below="@+id/txv_valor"
+            android:layout_alignEnd="@+id/txv_valor" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>
+

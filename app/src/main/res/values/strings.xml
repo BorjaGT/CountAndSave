@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Count and Save</string>
+    <string name="titulo_pantalla_calculadora">Enter the spending</string>
+
+    <string name="action_grafico_tarta">Gráfico de tarta</string>
+    <string name="action_grafico_barras">Gráfico de barras</string>
+    <string name="action_configuracion">Configuración</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="titulo_concepto">Concept:</string>
+    <string name="aviso_concepto">You must choose a concept.</string>
+</resources>

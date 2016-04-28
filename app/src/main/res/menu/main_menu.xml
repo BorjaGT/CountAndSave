@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_grafico_tarta"
+        android:title="@string/action_grafico_tarta"
+        android:icon="@drawable/ic_grafico_queso"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_grafico_barras"
+        android:title="@string/action_grafico_barras"
+        android:icon="@drawable/ic_grafico_barras"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_configuracion"
+        android:title="@string/action_configuracion"
+        android:icon="@drawable/ic_configuracion"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+</menu>
