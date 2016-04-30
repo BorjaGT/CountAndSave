@@ -56,7 +56,7 @@ public class ArrayAdapter_Leyenda extends ArrayAdapter<ListItem_Concepto> {
             }
 
         //Obteniendo instancia de la ListItem_Concepto en la posición actual
-        ListItem_Concepto lic = getItem(position);
+        ListItem_Concepto lic = vg.listaLeyenda.get(position);
 
         if(lic.habilitado){
             viewholder.btn_color.setBackgroundColor(Color.parseColor(lic.color));
@@ -117,7 +117,7 @@ public class ArrayAdapter_Leyenda extends ArrayAdapter<ListItem_Concepto> {
         @Override
         protected void onPreExecute() {
             //Leemos el identificador del concepto que toca en la posición i
-            concepto_id = vg.listaConceptos.get(posicion).concepto_id;
+            concepto_id = vg.listaConceptosDiferents.get(posicion).concepto_id;
         }
 
         @Override
