@@ -106,7 +106,6 @@ public class ArrayAdapter_Leyenda extends ArrayAdapter<ListItem_Concepto> {
         public UpdateProgress(int pos, ViewHolder vh) {
             this.posicion = pos;
             this.holder = vh;
-            //this.vg = VariablesGlobales.getInstance();
 
             otherSymbols = new DecimalFormatSymbols();
             otherSymbols.setDecimalSeparator('.');
@@ -138,7 +137,6 @@ public class ArrayAdapter_Leyenda extends ArrayAdapter<ListItem_Concepto> {
                 }
                 progreso += pasoPorcentaje;
                 publishProgress(progreso);
-                //SystemClock.sleep(Math.round(Math.random() * 1));
             }
 
             //Consultamos el color que le pertenece a ese concepto
